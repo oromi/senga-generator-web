@@ -1,1 +1,1 @@
-web: gunicorn senga-generator-web.wsgi --log-file
+web: gunicorn senga-generator-web.wsgi --logfile - 
