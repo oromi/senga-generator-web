@@ -71,4 +71,13 @@ def senga(input):
     out = cv2.absdiff(dilated, gray)
     inv = 255 - out
     imwrite("./tmp/output/output.jpg", inv)
+    #sharp
+    out = imread("./tmp/output/output.jpg")
+    kernel = np.array([
+    [0, -1, 0],
+    [0, 3, 0],
+    [0, -1, 0]
+    ])
+    sharpened = cv2.filter2D(out, -1, (kernel))
+    imwrite("./tmp/output/output.jpg", sharpened)
 
