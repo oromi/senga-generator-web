@@ -1,3 +1,3 @@
 # senga-generator-web
 
-color - to - lineart
+イラストから線画を抽出します
